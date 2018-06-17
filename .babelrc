@@ -1,0 +1,13 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["."],
+                "cwd": "babelrc"
+            }
+        ]
+    ],
+    "presets": ["next/babel"],
+    "ignore": []
+}
