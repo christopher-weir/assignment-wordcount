@@ -1,6 +1,6 @@
 // load & init modules
-var _           = require('lodash');
-var fs          = require('fs');
+var _ = require('lodash');
+var fs = require('fs');
 
 // loads a specified file and creates a dictionary of unique words from it
 function _load(filename, callback) {
@@ -12,7 +12,7 @@ function _load(filename, callback) {
     }
 
     // text split in to words
-    var words = data.split(" ");
+    var words = data.split(' ');
 
     // words are filtered & cleaned
     words = _.map(words, function(word) {
@@ -25,7 +25,7 @@ function _load(filename, callback) {
     words = _.uniq(words);
 
     var wordCount = words.length || 0;
-    console.error("Dictionary loaded with %d unique words", wordCount);
+    console.error('Dictionary loaded with %d unique words', wordCount);
 
     // send dictionary to callback-function
     callback(words);

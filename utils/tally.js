@@ -1,10 +1,11 @@
-const createTallyData = tally => {
-    return Object.keys(tally).reduce((prev, key) => {
-        const count = tally[key];
-        prev[count] ? prev[count].push(key) : (prev[count] = [key]);
+const createTallyGroups = tally => {
+  // group the words by their count
+  return Object.keys(tally).reduce((group, key) => {
+    const count = tally[key];
+    group[count] ? group[count].push(key) : (group[count] = [key]);
 
-        return prev;
-    }, {});
+    return group;
+  }, {});
 };
 
-export { createTallyData };
+export { createTallyGroups };

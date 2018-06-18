@@ -5,24 +5,21 @@ import { Section } from 'components/Layout';
 import TallyList from './TallyList';
 
 const Tally = ({ data }) => (
-    <Section title="Tally">
-        {Object.keys(data)
-            .sort((a, b) => a - b)
-            .reverse()
-            .map(tally => {
-                return (
-                    <TallyList key={tally} title={tally} data={data[tally]} />
-                );
-            })}
-    </Section>
+  <Section title="Tally">
+    {Object.keys(data)
+      .sort((a, b) => b - a)
+      .map(tally => {
+        return <TallyList key={tally} title={tally} data={data[tally]} />;
+      })}
+  </Section>
 );
 
 Tally.defaultProps = {
-    data: {},
+  data: {}
 };
 
 Tally.propTypes = {
-    data: PropTypes.object,
+  data: PropTypes.object
 };
 
 export default Tally;
