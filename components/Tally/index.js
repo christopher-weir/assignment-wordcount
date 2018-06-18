@@ -5,7 +5,7 @@ import { Section } from 'components/Layout';
 import TallyList from './TallyList';
 
 const Tally = ({ data }) => (
-  <Section title="Tally">
+  <Section title="Tally" subtitle="Grouping of all words by their count">
     {Object.keys(data)
       .sort((a, b) => b - a)
       .map(tally => {

@@ -1,25 +1,28 @@
 {
-    "name": "unomaly-assignment-app",
-    "scripts": {
-        "dev": "node server.js",
-        "build": "next build",
-        "start": "NODE_ENV=production node server.js"
-    },
-    "dependencies": {
-        "@zeit/next-css": "^0.2.0",
-        "chart.js": "^2.7.2",
-        "express": "^4.16.3",
-        "next": "^6.0.3",
-        "react": "^16.4.1",
-        "react-chartjs-2": "^2.7.2",
-        "react-dom": "^16.4.1",
-        "socket.io": "^2.1.1"
-    },
-    "devDependencies": {
-        "babel-eslint": "^8.2.3",
-        "babel-plugin-module-resolver": "^3.1.1",
-        "eslint": "^4.19.1",
-        "eslint-plugin-react": "^7.9.1",
-        "tachyons": "^4.10.0"
-    }
+  "name": "unomaly-assignment-app",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "chart.js": "^2.7.2",
+    "express": "^4.16.3",
+    "next": "^6.0.3",
+    "react": "^16.4.1",
+    "react-chartjs-2": "^2.7.2",
+    "react-dom": "^16.4.1",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.9.1",
+    "tachyons": "^4.10.0"
+  },
+  "now": {
+    "alias": "unomaly-assignment-app-cweir"
+  }
 }

@@ -6,7 +6,7 @@ const createFeedDataset = (history, steps = 4) => {
   );
 
   const timestamps = recent.map(({ time }) => {
-    // convert to a readable time
+    // TODO convert to a readable time
     return time;
   });
 
@@ -20,7 +20,7 @@ const createFeedDataset = (history, steps = 4) => {
     }, [])
     .filter(Boolean);
 
-  // loop the words to tally them for each event
+  // loop the words and tally them for each event
   for (let i = 0; i < words.length; i++) {
     const key = words[i];
     datasets[key] = {

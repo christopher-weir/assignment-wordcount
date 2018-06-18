@@ -7,6 +7,7 @@ const sortPrevalence = (tally, count = 4) => {
       return b.count - a.count;
     });
 
+  // TODO handle if the sorted length < count
   return [
     // top count
     ...sorted.slice(0, count),
